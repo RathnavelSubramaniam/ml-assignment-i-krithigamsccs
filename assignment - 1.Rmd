@@ -1,4 +1,23 @@
 ---
+output:
+  
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+        
+  pdf_document:
+    
+    fig_caption: true
+    fig_crop: false
+  word_document: default
+params:
+    printcode: false
+---
+
+
+---
 title: "assignment 1"
 author: "krithiga"
 date: "2024-07-10"
@@ -15,10 +34,6 @@ library(ISLR)
 ?Auto
 ```
 
-```{r}
-??Boston
-```
-
 
 
 ```{r}
@@ -32,7 +47,7 @@ summary(complete.cases(Auto))
 ```{r}
 auto=Auto 
 ```
-
+### A)Which of the predictors are quantitative, and which are qualitative?
 ```{r}
 str(auto)
 ```
